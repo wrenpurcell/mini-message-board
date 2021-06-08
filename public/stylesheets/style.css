@@ -1,8 +1,14 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family:'Courier New', Courier, monospace;
+  color: blue;
 }
 
 a {
   color: #00B7FF;
+}
+
+div#messagesDisplay {
+  display: grid;
+  border: 1px solid #00B7FF;
 }
