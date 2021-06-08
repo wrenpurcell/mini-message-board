@@ -2,14 +2,15 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='../public/stylesheets/style.css' type="text/css"/>
+    <link rel='stylesheet' href='/stylesheets/style.css' type="text/css"/>
+    <script src='/javascripts/script.js'></script>
   </head>
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
    <div><a href="new">new message</a></div> 
     <% for (m of messages) {%>
-  <div id="messagesDisplay">
+  <div class="message">
     <p><%= m.text %> </p>
     <p><%= m.added.getDate() + '/' +  m.added.getMonth() + '/' +  m.added.getFullYear() %></p>
     <p><%= m.user %></p>
